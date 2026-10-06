@@ -1,0 +1,13 @@
+customer_ref,product,branch,balance,tenure_years
+C-001,Checking,Eastgate,4210.55,6
+C-002,Savings,Eastgate,18900.00,11
+C-003,Checking,Harbor Street,1325.10,2
+C-004,Certificate,Harbor Street,52000.00,15
+C-005,Savings,Northfield,9400.75,4
+C-006,Checking,Northfield,2875.30,8
+C-007,Certificate,Eastgate,36500.00,13
+C-008,Checking,Harbor Street,640.20,1
+C-009,Savings,Harbor Street,14250.00,5
+C-010,Certificate,Northfield,61200.00,18
+C-011,Checking,Eastgate,3150.00,3
+C-012,Savings,Eastgate,7725.40,9

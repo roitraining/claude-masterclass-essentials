@@ -1,0 +1,13 @@
+customer_name,account_number,tax_id,date_of_birth,email,product,branch,balance,tenure_years,last_contact_note
+Marisol Quintero,ACCT-100231,000-12-3401,1978-03-14,m.quintero@example.com,Checking,Eastgate,4210.55,6,Asked about moving funds before a knee surgery in November.
+Theo Ballard,ACCT-100232,000-12-3402,1964-11-02,t.ballard@example.com,Savings,Eastgate,18900.00,11,Mentioned his daughter starts college next fall.
+Priyanka Nandakumar,ACCT-100233,000-12-3403,1990-07-21,p.nandakumar@example.com,Checking,Harbor Street,1325.10,2,Complained about a fee on 12 September.
+Walter Osei,ACCT-100234,000-12-3404,1952-01-30,w.osei@example.com,Certificate,Harbor Street,52000.00,15,"Widower, asked who can access the account after him."
+Lena Fischer,ACCT-100235,000-12-3405,1985-09-09,l.fischer@example.com,Savings,Northfield,9400.75,4,Planning a home purchase next spring.
+Jamal Whitaker,ACCT-100236,000-12-3406,1971-05-17,j.whitaker@example.com,Checking,Northfield,2875.30,8,Asked to change his mailing address.
+Ingrid Larsen,ACCT-100237,000-12-3407,1959-12-25,i.larsen@example.com,Certificate,Eastgate,36500.00,13,Called about the renewal rate.
+Carlos Mendes,ACCT-100238,000-12-3408,1995-02-11,c.mendes@example.com,Checking,Harbor Street,640.20,1,"New customer, opened account in August."
+Aisha Rahman,ACCT-100239,000-12-3409,1982-08-04,a.rahman@example.com,Savings,Harbor Street,14250.00,5,Asked about a joint account with her spouse.
+Henrik Dahl,ACCT-100240,000-12-3410,1948-06-19,h.dahl@example.com,Certificate,Northfield,61200.00,18,Asked for a branch visit because he cannot use online banking.
+Nora Castellanos,ACCT-100241,000-12-3411,1993-10-28,n.castellanos@example.com,Checking,Eastgate,3150.00,3,Disputed a card charge.
+Owen Prescott,ACCT-100242,000-12-3412,1976-04-06,o.prescott@example.com,Savings,Eastgate,7725.40,9,Mentioned a job change next month.

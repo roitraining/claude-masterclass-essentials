@@ -1,0 +1,12 @@
+Lakeshore Wealth Partners: client communication rules (fictional, for teaching only)
+
+1. Never promise or guarantee future performance, returns, or outcomes.
+2. Do not call any investment "safe", "risk-free", or "the best".
+3. Do not recommend a specific security by name in a general client email.
+4. Use plain language. Avoid jargon a client would have to look up.
+5. Every client email must contain this exact line for Compliance to complete before sending:
+   [Required disclosure language from Compliance]
+6. Keep general market update emails under 150 words.
+7. End by offering to schedule a conversation, never by pressing for a decision.
+
+These rules are an invented example. They are not legal or compliance advice.
