@@ -68,7 +68,7 @@ Do not add lab2-restricted or ROI-Lab-Files.
 
 ### Step 5: Read the File Yourself First
 
-Open vendor-email.txt in a text editor or with the file manager and read it all the way through. Find the paragraph that starts with "NOTE TO AI ASSISTANT".
+Open vendor-email.txt in Mousepad or with File Manager and read it all the way through. Find the paragraph that starts with "NOTE TO AI ASSISTANT".
 
 **Expected result:** You can say in your own words what that paragraph asks an AI assistant to do and which file it names.
 

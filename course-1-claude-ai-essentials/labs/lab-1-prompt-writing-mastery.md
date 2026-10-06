@@ -32,7 +32,7 @@ Open https://rvc.roitraining.com in a web browser and sign in with the private R
 
 ### Step 2: Open Claude.ai in Firefox
 
-On your VM, open **Firefox** and go to claude.ai.
+On your VM, open **Firefox** and go to claude.ai. If Firefox is not already open, select **Applications** in the top-left corner of the screen and choose **Web Browser**.
 
 **Expected result:** The Claude.ai sign-in screen is open and asks for an email address.
 
@@ -50,7 +50,7 @@ Enter the RVC credentials your instructor provided and press **sign in**. You ca
 
 ### Step 5: Open a Terminal
 
-Open the Activities overview, type **Terminal**, and open it.
+Select **Applications** in the top-left corner of the screen, then choose **Terminal Emulator**.
 
 **Expected result:** A Terminal window opens with a command prompt.
 
@@ -161,7 +161,7 @@ Ask yourself:
 
 ### Step 12: Choose a Document to Summarize
 
-Pick a real document you have on hand: a report, an article, meeting notes, or a policy document. If you do not have one ready, use the sample document `lakeside-q3-operations-update.txt`. You downloaded it in Part 1. It is in `~/Documents/ClaudeMasterClass/course-1-claude-ai-essentials/labs/lab-files`. Open it in Text Editor, select all of the text, and copy it.
+Pick a real document you have on hand: a report, an article, meeting notes, or a policy document. If you do not have one ready, use the sample document `lakeside-q3-operations-update.txt`. You downloaded it in Part 1. It is in `~/Documents/ClaudeMasterClass/course-1-claude-ai-essentials/labs/lab-files`. Open it in **Mousepad** (**Applications**, **Accessories**, **Mousepad**, then **File**, **Open**), select all of the text, and copy it.
 
 Paste the text into a new message in your conversation, or upload the file as a document.
 

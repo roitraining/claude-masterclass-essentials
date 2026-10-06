@@ -24,15 +24,15 @@ Both folders are in `~/Documents/ClaudeMasterClass/course-2-claude-desktop-essen
 
 > ## BUILD NOTE: Run these demos on the class VM
 >
-> This file was written for a Linux VM from Anthropic's Linux install documentation and standard Ubuntu behavior. It has not been run on the VM. Confirm on the VM: that the `Ctrl+Alt+C` shortcut raises the existing Claude window, that the operating system screenshot tool behaves as described in Demo 2, that dragging a file from Files into the Claude message box attaches it (Demo 4), and that the Filesystem extension installs with the folder picker (Demo 5). Two statements in Demo 6 are also unconfirmed against a public source: the exact layout of an extension's detail page, and the statement about local credentials in Step 4. A citation for that statement is still needed. Delete this note after the VM run passes.
+> The `Ctrl+Alt+C` shortcut was confirmed on the class VM on October 6, 2026. The rest of this file has not been run on the VM. Confirm on the VM: that the Xfce screenshot tool behaves as described in Demo 2, that dragging a file from File Manager into the Claude message box attaches it (Demo 4), and that the Filesystem extension installs with the folder picker (Demo 5). Two statements in Demo 6 are also unconfirmed against a public source: the exact layout of an extension's detail page, and the statement about local credentials in Step 4. A citation for that statement is still needed. Delete this note after the VM run passes.
 
 ---
 
 ## Prerequisites
 
-- [ ] Claude Desktop installed and signed in on a Linux VM (Ubuntu 22.04 or later, X11 display server)
-- [ ] A keyboard shortcut named Open Claude, bound to `Ctrl+Alt+C` and running `claude-desktop`, created and tested (the same steps as Lab 1, Step 23)
-- [ ] A second application open and visible for Demo 1 (Text Editor, or a spreadsheet application if the VM has one)
+- [ ] Claude Desktop installed and signed in on a Linux VM (the class VM, which uses the Xfce desktop)
+- [ ] A keyboard shortcut bound to `Ctrl+Alt+C` that runs `claude-desktop`, created and tested (the same steps as Lab 1, Step 23)
+- [ ] A second application open and visible for Demo 1 (Mousepad, or a spreadsheet application if the VM has one)
 - [ ] `messy-contact-list.csv` from the `demo-files` folder, ready to open as the screenshot target for Demo 2
 - [ ] The `demo-files` folder from the course files in `~/Documents/ClaudeMasterClass/course-2-claude-desktop-essentials/demos`, holding `expense-sample.csv`, `budget-notes.txt`, and `messy-contact-list.csv`
 - [ ] The Filesystem Desktop Extension available to install in Demo 5
@@ -52,7 +52,7 @@ This demo shows the shortcut before it is explained. Stay in your own work, pres
 
 ### Steps
 
-1. Open Text Editor or a spreadsheet application and stay mid-task in it. Do not have Claude Desktop visible.
+1. Open Mousepad or a spreadsheet application and stay mid-task in it. Do not have Claude Desktop visible.
 2. Keep working in that application for a few seconds.
 3. Without using the mouse or the applications menu, press `Ctrl+Alt+C`.
 4. When Claude comes to the front, type a playful, low-stakes request, such as: "Write a two-line limerick roasting Monday mornings."
@@ -83,8 +83,8 @@ Run this right after Demo 1, or on its own. A screenshot works here before the f
 
 ### Steps
 
-1. Open `messy-contact-list.csv` from the `demo-files` folder in Text Editor, or in a spreadsheet application if the VM has one. It is intentionally messy fake data.
-2. Press the Print Screen key, choose the window or the area to capture, and take the screenshot. Ubuntu saves it in the Pictures folder, in a Screenshots subfolder.
+1. Open `messy-contact-list.csv` from the `demo-files` folder in Mousepad, or in a spreadsheet application if the VM has one. It is intentionally messy fake data.
+2. Press the Print Screen key. The Xfce screenshot tool opens. Choose the active window or a region of the screen, then save the screenshot or copy it to the clipboard. `Alt+Print` captures the active window and `Shift+Print` captures a region.
 3. In a Claude conversation, attach the screenshot with the attach button, or paste it into the message box.
 4. Ask a playful, low-stakes question about it, such as: "Roast my spreadsheet in one sentence."
 5. Read Claude's response. Look for details from your screenshot in the answer.
@@ -111,7 +111,7 @@ This demo is one continuous tour of four features. Work through the steps in ord
 
 ### Steps
 
-1. **The shortcut in depth.** Open the Custom Shortcuts screen: Settings, Keyboard, View and Customize Shortcuts, Custom Shortcuts. Find the Open Claude entry. Take note that a shortcut is a name, a command, and a key combination. This one runs the Claude Desktop command, and you choose the combination so it does not collide with one you already use. Press it from another application once more.
+1. **The shortcut in depth.** Open the Application Shortcuts tab: Applications, Settings, Keyboard, Application Shortcuts. Find the `claude-desktop` entry. Take note that a shortcut is a command and a key combination. This one runs the Claude Desktop command, and you choose the combination so it does not collide with one you already use. Press it from another application once more.
 2. **Multiple sessions.** Open a second, unrelated chat session inside Claude Desktop alongside the first. Ask a question in the first session, switch to the second, ask an unrelated question, then switch back to the first session. Check that its context is still intact.
 3. **Cross-device sync.** In the VM's web browser, open claude.ai and start a new conversation. Type one message in the browser.
 4. Switch to Claude Desktop and open that same conversation. Check that the message you sent from the browser is already visible there.
@@ -138,7 +138,7 @@ Voice dictation is not available on Linux, so this demo uses drag and drop inste
 
 ### Steps
 
-1. Open **Files** and go to the `demo-files` folder in `Documents/ClaudeMasterClass/course-2-claude-desktop-essentials/demos`. Find `expense-sample.csv`. Place the Files window and the Claude window side by side.
+1. Open **File Manager** and go to the `demo-files` folder in `Documents/ClaudeMasterClass/course-2-claude-desktop-essentials/demos`. Find `expense-sample.csv`. Place the File Manager window and the Claude window side by side.
 2. In Claude, start a new conversation.
 3. Drag `expense-sample.csv` from Files into the Claude message box. Check that the file is attached to the message.
 4. Type: "Which three expenses are the largest, and what do they add up to?" and send it.
@@ -242,7 +242,7 @@ The files are in the `fin-demo-files` folder next to this guide, in the course f
 
 **Steps:**
 
-1. Open both files in Text Editor, one beside the other. The bank statement has 16 lines of transactions and the ledger has 17. Someone does this comparison by hand every month.
+1. Open both files in Mousepad, one beside the other. The bank statement has 16 lines of transactions and the ledger has 17. Someone does this comparison by hand every month.
 2. In Claude, start a new conversation so the extension's tools load. Type: "Compare bank-statement-2026-09.csv and general-ledger-2026-09.csv in my fin-demo-files folder. List every transaction that appears in one but not the other, and every pair where the amounts differ. Do not change any file yet."
 3. When Claude asks permission to use a tool, read the prompt, confirm it points at `fin-demo-files`, and allow it.
 4. Read Claude's list. Check it against the six expected differences below.
@@ -282,7 +282,7 @@ The file `exceptions.md` is created in the folder with one line per exception. F
 
 **Steps:**
 
-1. Open Text Editor and start typing a short email to a vendor. Stay mid-task.
+1. Open Mousepad and start typing a short email to a vendor. Stay mid-task.
 2. Press `Ctrl+Alt+C` to bring Claude forward. Start a new conversation.
 3. Type: "Using wire-approval-policy.md in my fin-demo-files folder, can I approve a $48,000 wire to an existing vendor by myself? Quote the section you rely on."
 4. Read the answer. Open the policy and check the section Claude quoted.
@@ -312,7 +312,7 @@ The file `exceptions.md` is created in the folder with one line per exception. F
 
 **Steps:**
 
-1. Open `portfolio-dashboard.png` in Image Viewer at full size.
+1. Open `portfolio-dashboard.png` in **Ristretto Image Viewer** (**Applications**, **Graphics**, **Ristretto Image Viewer**) at full size.
 2. Press Print Screen, capture the window, and attach the screenshot in Claude, the same way as in Demo 2.
 3. Ask: "Summarize this dashboard in three sentences for a client meeting." Read the answer.
 4. Ask: "Check the numbers on this dashboard against each other. Does anything not add up?"

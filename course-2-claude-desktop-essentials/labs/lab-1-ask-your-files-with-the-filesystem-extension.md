@@ -5,9 +5,9 @@
 
 ---
 
-> ## BUILD NOTE: Part 6 steps need a test on the class VM before distribution
+> ## BUILD NOTE: The Windows steps in Part 6 need a test
 >
-> Part 6 (the custom keyboard shortcut) was written from Anthropic's Linux install documentation and standard Ubuntu behavior. It has not been run on the class VM. Before this lab goes to students, confirm four things on the VM: the Settings path and the Custom Shortcuts dialog in the installed Ubuntu release, that `Ctrl+Alt+C` is free, that running `claude-desktop` while Claude is already open raises the existing window instead of starting a second one, and that Claude is allowed to run from a shortcut command. The Windows steps in Part 6 are also untested. Delete this note after the VM test passes.
+> The Linux steps in Part 6 were confirmed on the class VM on October 6, 2026: the Xfce Application Shortcuts tab, the `claude-desktop` command, and the `Ctrl+Alt+C` shortcut that brings Claude forward. The Windows steps in Part 6 are untested. The app names elsewhere in this lab (the Applications menu, Terminal Emulator, File Manager, Mousepad) come from screenshots of the class VM's Xfce desktop. Delete this note after the Windows steps are tested.
 
 ---
 
@@ -40,7 +40,7 @@ Open https://rvc.roitraining.com in a web browser and sign in with the private R
 
 ### Step 2: Open Claude for Linux and Select Get Started
 
-Open the Activities overview or the applications menu and start **Claude**. Claude for Linux is the same Claude app that you would install on Windows or Mac. When Claude opens, select **Get Started**.
+Select **Applications** in the top-left corner of the screen, choose **Accessories**, and then choose **Claude**. Claude for Linux is the same Claude app that you would install on Windows or Mac. When Claude opens, select **Get Started**.
 
 **Expected result:** Claude shows a sign-in screen that asks for an email address.
 
@@ -64,7 +64,7 @@ The prompt asks "Allow this site to open the Claude link with Claude". Press **o
 
 ### Step 6: Open a Terminal
 
-Open the Activities overview, type **Terminal**, and open it.
+Select **Applications** in the top-left corner of the screen, then choose **Terminal Emulator**.
 
 **Expected result:** A Terminal window opens with a command prompt.
 
@@ -91,7 +91,7 @@ The first command creates a folder named `ClaudeMasterClass` inside your Documen
 
 ### Step 8: Start Claude Desktop
 
-**Linux (VM):** Claude is already open and signed in from Part 1. Continue to the next step. If you closed it, open the Activities overview or the applications menu and start **Claude** again.
+**Linux (VM):** Claude is already open and signed in from Part 1. Continue to the next step. If you closed it, select **Applications**, choose **Accessories**, and then choose **Claude** again.
 
 **Windows:** Open the Start menu and start **Claude**.
 
@@ -117,7 +117,7 @@ Open project-tracker.csv in my Documents/ClaudeMasterClass/course-2-claude-deskt
 
 ### Step 10: Find the Folder in Your File Manager
 
-**Linux (VM):** Open **Files**, choose **Documents**, then open **ClaudeMasterClass**, **course-2-claude-desktop-essentials**, **labs**, and **ROI-Lab-Files**.
+**Linux (VM):** Open **File Manager** from the **Applications** menu, choose **Documents**, then open **ClaudeMasterClass**, **course-2-claude-desktop-essentials**, **labs**, and **ROI-Lab-Files**.
 
 **Windows:** Open **File Explorer**, choose **Documents**, then open **ClaudeMasterClass**, **course-2-claude-desktop-essentials**, **labs**, and **ROI-Lab-Files**.
 
@@ -275,19 +275,19 @@ Until now you opened Claude by finding its window. In this part you build a keyb
 
 ### Step 23: Create a Keyboard Shortcut That Opens Claude
 
-**Linux (VM):** Open **Settings**, choose **Keyboard**, and select **View and Customize Shortcuts**. Scroll to **Custom Shortcuts** and click the plus button. Enter the name `Open Claude` and the command `claude-desktop`. Click **Set Shortcut** and press `Ctrl+Alt+C`. If Ubuntu reports that the combination is already in use, do not replace the existing shortcut. Choose a different combination. Click **Add**.
+**Linux (VM):** Select **Applications**, then **Settings**, then **Keyboard**. Open the **Application Shortcuts** tab and click **Add** at the bottom left. In the **Shortcut Command** box, enter `claude-desktop` in the **Command** field and click **OK**. When Xfce asks for the keys, press `Ctrl+Alt+C`. If Xfce reports that the combination is already in use, do not replace the existing shortcut. Choose a different combination.
 
 **Windows:** Find the **Claude** shortcut on your desktop or in the Start menu folder. If you start from the Start menu, right-click **Claude**, choose **More**, and choose **Open file location**. Right-click the Claude shortcut file, choose **Properties**, and open the **Shortcut** tab. Click in the **Shortcut key** box and press the letter C. Windows fills in `Ctrl+Alt+C`. Click **Apply**.
 
 **Mac:** A Mac has no single system setting that opens an application with a key. Use Claude's built-in Quick Entry gesture instead. Double-tap the **Option** key from any application. To change the gesture, open Claude, choose **Settings**, choose **General**, and look for the Quick Entry shortcut setting. On a Mac, this opens a small floating window instead of the main window.
 
-**Expected result:** On Linux, the shortcut appears in the Custom Shortcuts list. On Windows, the Shortcut key box shows `Ctrl+Alt+C`. On Mac, you know which gesture opens Quick Entry.
+**Expected result:** On Linux, the shortcut appears in the Application Shortcuts list. On Windows, the Shortcut key box shows `Ctrl+Alt+C`. On Mac, you know which gesture opens Quick Entry.
 
 > **Optional: Claude's own hotkey on Linux.** Claude Desktop on Linux also offers a built-in Quick Entry hotkey, which works on the X11 display server the class VM uses. Ask your instructor whether it is turned on for your VM. The shortcut you create in this step does not depend on that beta feature, and the same idea works on every platform.
 
 ### Step 24: Test the Shortcut From Another Application
 
-Open a different application and click inside it. Use **Text Editor** on the Linux VM, **Notepad** on Windows, or **TextEdit** on Mac. Press your shortcut.
+Open a different application and click inside it. Use **Mousepad** on the Linux VM (**Applications**, **Accessories**, **Mousepad**), **Notepad** on Windows, or **TextEdit** on Mac. Press your shortcut.
 
 **Expected result:** Claude comes to the front without you using the mouse or the applications menu.
 

@@ -8,7 +8,7 @@ Welcome to Claude MasterClass Essentials! This repo contains the lab guides and 
 
 ### [Claude.ai Essentials, Lab 1: Prompt Writing Mastery](course-1-claude-ai-essentials/labs/lab-1-prompt-writing-mastery.md) (30 minutes)
 
-Sign in to Claude.ai in Firefox on your class virtual machine, download the course files with Git, and then turn three vague, one-sentence requests into structured prompts using the POCC framework: Persona, Objective, Context, and Constraints. The three tasks are an email, a document summary, and a meeting recap. For each one you run the vague version first, rebuild it with POCC, and compare the two outputs side by side. You leave with three reusable prompts built around office scenarios. Skills practiced: writing structured prompts, spotting which POCC element is missing when a response comes back generic, and judging a first draft against a refined one.
+Sign in to Claude.ai in Firefox on your class virtual machine, download the course files with Git, and then turn three vague, one-sentence requests into structured prompts using the POCC framework: Persona, Objective, Context, and Constraints. The three tasks are an email, a document summary, and a meeting recap. For each one you run the vague version first, rebuild it with POCC, and compare the two outputs side by side. You leave with three reusable prompts built around real office scenarios. Skills practiced: writing structured prompts, spotting which POCC element is missing when a response comes back generic, and judging a first draft against a refined one.
 
 ### [Claude.ai Essentials, Lab 2: Fact-Checking and Grounding AI Output](course-1-claude-ai-essentials/labs/lab-2-fact-checking-and-grounding-ai-output.md) (30 to 40 minutes)
 
