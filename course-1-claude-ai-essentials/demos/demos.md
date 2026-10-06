@@ -99,7 +99,7 @@ Some demos continue from an earlier one. Where that is true, the demo says so. C
 
 **Supports:** Module 6, working with files safely, and a useful document-reading capability.
 
-**Files:** `demo-files/lakeside-vendor-contract.docx`, a fictional two-page Packaging and Fulfillment Supply Agreement between Lakeside Outfitters and Ridgeline Packaging Co.
+**Files:** `demo-files/lakeside-vendor-contract.docx`, a fictional two-page Packaging and Fulfillment Supply Agreement between Lakeside Outfitters and Ridgeline Packaging Co. A PDF copy, `demo-files/lakeside-vendor-contract.pdf`, opens in Firefox. Attach the `.docx` to Claude.
 
 **Context:** This demo shows a real capability, finding a specific buried detail faster than a manual read-through. It also sets up the data-handling discussion in Demo 5.
 
@@ -121,13 +121,13 @@ Some demos continue from an earlier one. Where that is true, the demo says so. C
 
 **Supports:** Module 6, data-handling guardrails, a major learning objective for this course.
 
-**Files:** `demo-files/lakeside-vendor-contract.docx` (the same contract from Demo 4)
+**Files:** `demo-files/lakeside-vendor-contract.pdf` (the same contract from Demo 4, as a PDF for reading in Firefox)
 
 **Context:** This demo does not introduce a new Claude capability. It builds judgment around the capability you just used. The goal is a simple instinct you can apply without looking anything up.
 
 **Steps:**
 
-1. Open the contract from Demo 4 in Word. Scan it for sensitive content before you would upload it anywhere. Look at the notice section and the payment section.
+1. Open `lakeside-vendor-contract.pdf` in Firefox. Scan it for sensitive content before you would upload it anywhere. Look at the notice section and the payment section.
 2. Take note of what you would redact or leave out: the named notice contacts with their direct phone lines and personal email addresses, and the bank account number ending 4821.
 3. Discuss with your group or a partner: what would change if this document contained an unredacted Social Security number or a client's medical record instead of a renewal date?
 4. Look at this two-column comparison. Safe to Share: a redacted contract, a public policy document, a de-identified dataset. Do Not Share: a real customer's SSN, unreleased financial results, a password, private medical information.
@@ -221,14 +221,14 @@ Some demos continue from an earlier one. Where that is true, the demo says so. C
 
 **Supports:** Module 8, spotting plausible-but-wrong AI answers, a major learning objective for this course.
 
-**Files:** `demo-files/plausible-answer-to-review.docx` and `demo-files/lakeside-vendor-contract.docx`
+**Files:** `demo-files/plausible-answer-to-review.pdf` and `demo-files/lakeside-vendor-contract.pdf`, both PDFs for reading in Firefox. The `.docx` versions of both are in the same folder.
 
 **Context:** This is the hardest kind of error to catch. The answer is not obviously broken. It reads fluently and looks correct. That is why checking anything you plan to act on has to become a habit.
 
 **Steps:**
 
-1. Open `plausible-answer-to-review.docx`. It is a polished one-page summary of the Lakeside vendor contract for a purchasing team. It contains one incorrect detail.
-2. Work alone or in pairs to find the incorrect detail. Check each number, date, and name against `lakeside-vendor-contract.docx`.
+1. Open `plausible-answer-to-review.pdf` in Firefox. It is a polished one-page summary of the Lakeside vendor contract for a purchasing team. It contains one incorrect detail.
+2. Work alone or in pairs to find the incorrect detail. Check each number, date, and name against `lakeside-vendor-contract.pdf`.
 3. Discuss with your group or a partner: why was the error easy to miss? Consider plausible phrasing, correct-sounding structure, and a detail that fits the surrounding context.
 4. Write a one-line validation habit in your own words. For example: before I act on a number, name, or date from Claude, I check it against the source.
 
@@ -307,7 +307,7 @@ Constraints: Under 150 words. Plain language. Warm tone. Include the required di
 
 **Supports:** Module 6, working with files safely, and Module 8, checking an answer against its source. Do it after Demo 4.
 
-**Files:** `demo-files/loan-term-sheet.docx`, a fictional three-page term sheet for a $4,500,000 equipment and real estate loan.
+**Files:** `demo-files/loan-term-sheet.docx`, a fictional three-page term sheet for a $4,500,000 equipment and real estate loan. A PDF copy, `demo-files/loan-term-sheet.pdf`, opens in Firefox. Attach the `.docx` to Claude.
 
 **Context:** Demo 4 showed Claude finding buried details in a contract. This demo adds a trap. The final question asks about a clause the document does not contain, so you can see the difference between a grounded answer and an invented one.
 
@@ -318,7 +318,7 @@ Constraints: Under 150 words. Plain language. Warm tone. Include the required di
 3. Ask: "Which financial covenants must the borrower meet, and how often is each one tested?" Read the answer. Find each covenant on page 2.
 4. Ask: "How many days does the borrower have to deliver quarterly financial statements, and who signs the compliance certificate?" Check page 2 again.
 5. Ask the trap question: "What prepayment penalty applies if the borrower repays the loan early?"
-6. Read the answer. Then open the term sheet and search it for the word "prepay". Confirm that nothing is found.
+6. Read the answer. Then open `loan-term-sheet.pdf` in Firefox, press `Ctrl+F`, and search for the word "prepay". Confirm that nothing is found.
 
 **Expected result:** Claude answers steps 2 to 4 correctly. The maturity date is October 15, 2031, when the unpaid balance of principal and interest is due in full. The three covenants are a debt service coverage ratio of at least 1.25 to 1.00 and a ratio of total funded debt to EBITDA of no more than 3.50 to 1.00, both tested annually, plus unrestricted cash of at least $400,000, tested each quarter. Quarterly statements are due within 45 days after each quarter end, and an officer of the Borrower signs the compliance certificate. For the trap question, a good answer says the term sheet does not mention prepayment and suggests checking the full loan agreement or asking the lender.
 
