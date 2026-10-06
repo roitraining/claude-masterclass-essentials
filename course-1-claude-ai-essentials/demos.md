@@ -240,6 +240,8 @@ Some demos continue from an earlier one. Where that is true, the demo says so. C
 
 ## Demo 11: Memory Callback
 
+> **TO FIX LATER: Do not run this demo for the time being.** In a test on October 6, 2026, Claude did not recall a detail shared minutes earlier, and it answered from older memory on the account instead. Recall is not reliable on the same day. This demo needs to be redesigned before it is used. Leave the steps below as they are until then.
+
 **Supports:** Module 9, a capstone demonstration of a feature introduced earlier in the day.
 
 **Context:** This is a short close to the interface features. It shows Memory, introduced in Module 3, working across separate conversations instead of within one.
