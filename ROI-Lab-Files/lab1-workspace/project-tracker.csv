@@ -1,0 +1,13 @@
+id,task,owner,status,due,notes
+T-101,Finalize site map,Priya,Done,2026-09-18,Approved by client
+T-102,Write product page copy,Marcus,Done,2026-09-22,
+T-103,Set up payment gateway sandbox,Dana,Done,2026-09-25,
+T-104,Migrate product images,Marcus,In Progress,2026-09-29,40 percent complete
+T-105,Build checkout flow,Dana,Blocked,2026-09-30,Waiting on gateway credentials from vendor
+T-106,Configure shipping rules,Priya,In Progress,2026-10-06,
+T-107,Draft returns policy,Lee,Done,2026-09-26,
+T-108,Accessibility review,Lee,Not Started,2026-10-09,
+T-109,Load testing,Dana,Not Started,2026-10-12,
+T-110,Set up analytics,Priya,In Progress,2026-10-02,Due today
+T-111,Customer email announcement,Marcus,Blocked,2026-10-08,Needs approved copy from client
+T-112,Final client sign-off,Priya,Not Started,2026-10-14,

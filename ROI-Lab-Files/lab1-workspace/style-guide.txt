@@ -1,0 +1,7 @@
+Client update style guide
+
+1. Use short, plain sentences.
+2. Write dates as day and month name, for example "19 October".
+3. State blockers directly and name what is needed to clear them.
+4. Do not promise a date that the project tracker does not support.
+5. End with one clear request for the client.
