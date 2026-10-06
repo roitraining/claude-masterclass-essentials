@@ -1,0 +1,12 @@
+# Keep text files with Linux line endings so they work on the Linux VM.
+* text=auto eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.csv text eol=lf
+
+# Binary files: never rewrite.
+*.docx binary
+*.xlsx binary
+*.pdf binary
+*.png binary
+*.zip binary
