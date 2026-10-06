@@ -20,7 +20,7 @@
 
 > **You are working in a shared classroom environment.** Your VM is for today's class only. Use the class account your instructor provides, and do not sign in with a personal account on the VM.
 
-> **Using your own machine instead?** Each step below includes a short Windows and Mac note where the steps differ. On your own machine you need Claude Desktop installed and signed in, and permission to install an extension. Linux machines must run Ubuntu 22.04 or later, or Debian 12 or later. You also need Git. Download the course files into a ClaudeMasterClass folder inside your Documents folder with the same commands as Step 7, using Git Bash on Windows or Terminal on Mac.
+> **Using your own machine instead?** Each step below includes a short Windows and Mac note where the steps differ. On your own machine you need Claude Desktop installed and signed in, and permission to install an extension. Linux machines must run Ubuntu 22.04 or later, or Debian 12 or later. You also need Git. Download the course files into a ClaudeMasterClass folder inside your Documents folder with the same commands as Step 7, using Git Bash on Windows or Terminal on Mac. Git must be version 2.25 or later.
 
 > **Claude Desktop on Linux is a beta.** Dictation and computer use are not available on Linux, and Claude's own Quick Entry feature is not required for this lab. Neither affects anything you do today.
 
@@ -75,13 +75,14 @@ Run the commands one at a time.
 ```
 mkdir -p ~/Documents/ClaudeMasterClass
 cd ~/Documents/ClaudeMasterClass
-git clone https://github.com/roitraining/claude-masterclass-essentials.git .
+git clone --filter=blob:none --sparse https://github.com/roitraining/claude-masterclass-essentials.git .
+git sparse-checkout set course-2-claude-desktop-essentials
 ls
 ```
 
-The first command creates a folder named `ClaudeMasterClass` inside your Documents folder. The second moves you into it. The third downloads the course files straight into that folder. The dot at the end tells Git to use the current folder. The last command lists what you downloaded.
+The first command creates a folder named `ClaudeMasterClass` inside your Documents folder. The second moves you into it. The third starts the download into that folder, and the dot at the end tells Git to use the current folder. The `--sparse` option makes Git fetch only the top-level files at first. The fourth command tells Git to download only the `course-2-claude-desktop-essentials` folder, which holds the files for Claude Desktop Essentials. You do not download the files for any other class. The last command lists what you downloaded.
 
-**Expected result:** The `ls` command lists these folders: `course-1-claude-ai-essentials` and `course-2-claude-desktop-essentials`. Each one has a `labs` folder and a `demos` folder. If Git asks you to sign in, use the access details your instructor gives you.
+**Expected result:** The `ls` command lists `README.md` and the `course-2-claude-desktop-essentials` folder. That folder has a `labs` folder and a `demos` folder. If Git asks you to sign in, use the access details your instructor gives you.
 
 > **Already downloaded the course files in an earlier lab?** Run `cd ~/Documents/ClaudeMasterClass` and then `git pull` to get the latest files. Do not clone a second time.
 

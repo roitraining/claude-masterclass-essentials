@@ -61,13 +61,14 @@ Run the commands one at a time.
 ```
 mkdir -p ~/Documents/ClaudeMasterClass
 cd ~/Documents/ClaudeMasterClass
-git clone https://github.com/roitraining/claude-masterclass-essentials.git .
+git clone --filter=blob:none --sparse https://github.com/roitraining/claude-masterclass-essentials.git .
+git sparse-checkout set course-1-claude-ai-essentials
 ls
 ```
 
-The first command creates a folder named `ClaudeMasterClass` inside your Documents folder. The second moves you into it. The third downloads the course files straight into that folder. The dot at the end tells Git to use the current folder. The last command lists what you downloaded.
+The first command creates a folder named `ClaudeMasterClass` inside your Documents folder. The second moves you into it. The third starts the download into that folder, and the dot at the end tells Git to use the current folder. The `--sparse` option makes Git fetch only the top-level files at first. The fourth command tells Git to download only the `course-1-claude-ai-essentials` folder, which holds the files for Claude.ai Essentials. You do not download the files for any other class. The last command lists what you downloaded.
 
-**Expected result:** The `ls` command lists these folders: `course-1-claude-ai-essentials` and `course-2-claude-desktop-essentials`. Each one has a `labs` folder and a `demos` folder. If Git asks you to sign in, use the access details your instructor gives you.
+**Expected result:** The `ls` command lists `README.md` and the `course-1-claude-ai-essentials` folder. That folder has a `labs` folder and a `demos` folder. If Git asks you to sign in, use the access details your instructor gives you.
 
 > **Already downloaded the course files in an earlier lab?** Run `cd ~/Documents/ClaudeMasterClass` and then `git pull` to get the latest files. Do not clone a second time.
 
