@@ -56,12 +56,12 @@ Open the Activities overview, type **Terminal**, and open it.
 
 ### Step 6: Download the Course Files with Git
 
-Your instructor gives you the repository address. In the commands below, replace `<REPO_URL>` with that address, without the angle brackets. Run the commands one at a time.
+Run the commands one at a time.
 
 ```
 mkdir -p ~/Documents/ClaudeMasterClass
 cd ~/Documents/ClaudeMasterClass
-git clone <REPO_URL> .
+git clone https://github.com/roitraining/claude-masterclass-essentials.git .
 ls
 ```
 
