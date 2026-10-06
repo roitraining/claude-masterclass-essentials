@@ -10,4 +10,4 @@ Scenario: you support the Lakeside Outfitters website relaunch. Today is
   lab2-workspace    Used in Lab 2. Claude gets access after you grant it.
   lab2-restricted   Used in Lab 2. Claude must never be given access to this folder.
 
-This folder is already in your Documents folder after you download the course files with Git in Lab 1.
+This folder is in your ClaudeMasterClass folder after you download the course files with Git in Lab 1.

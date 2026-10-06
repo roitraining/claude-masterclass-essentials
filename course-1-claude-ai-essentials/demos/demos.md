@@ -19,7 +19,7 @@ Each demo is laid out the same way:
 
 Many steps include a prompt to type into Claude. Type each one exactly as shown, inside the quotation marks.
 
-The demo files are in the `demo-files` folder next to this guide. After you download the course files in Lab 1, both are in `~/Documents/course-1-claude-ai-essentials`. Every person, company, account, and figure in them is fictional.
+The demo files are in the `demo-files` folder next to this guide. After you download the course files in Lab 1, both are in `~/Documents/ClaudeMasterClass/course-1-claude-ai-essentials/demos`. Every person, company, account, and figure in them is fictional.
 
 Some demos continue from an earlier one. Where that is true, the demo says so. Claude can produce different wording each time, so your results may differ in detail from the descriptions here. Check them against the Expected result.
 
@@ -263,7 +263,7 @@ These four demos repeat skills the course already teaches, using fictional finan
 
 Every person, company, account, and figure in the demo files is fictional. The rules and thresholds used here are invented teaching examples. They are not legal or compliance advice. Have a compliance team review the wording before using these demos with financial services staff.
 
-The files for these demos are in the `demo-files` folder next to this guide, in `~/Documents/course-1-claude-ai-essentials`.
+The files for these demos are in the `demo-files` folder next to this guide, in `~/Documents/ClaudeMasterClass/course-1-claude-ai-essentials/demos`.
 
 ---
 

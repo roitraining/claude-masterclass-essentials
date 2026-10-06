@@ -59,26 +59,17 @@ Open the Activities overview, type **Terminal**, and open it.
 Your instructor gives you the repository address. In the commands below, replace `<REPO_URL>` with that address, without the angle brackets. Run the commands one at a time.
 
 ```
-cd ~/Documents
+mkdir -p ~/Documents/ClaudeMasterClass
+cd ~/Documents/ClaudeMasterClass
 git clone <REPO_URL> .
+ls
 ```
 
-The first command moves you into your Documents folder. The second downloads the course files into it. The dot at the end tells Git to download the files straight into the current folder.
+The first command creates a folder named `ClaudeMasterClass` inside your Documents folder. The second moves you into it. The third downloads the course files straight into that folder. The dot at the end tells Git to use the current folder. The last command lists what you downloaded.
 
-Then run `ls` to list what you downloaded.
+**Expected result:** The `ls` command lists these folders: `course-1-claude-ai-essentials` and `course-2-claude-desktop-essentials`. Each one has a `labs` folder and a `demos` folder. If Git asks you to sign in, use the access details your instructor gives you.
 
-**Expected result:** The `ls` command lists these folders: `ROI-Lab-Files`, `demo-files`, `fin-demo-files`, `course-1-claude-ai-essentials`, and `course-2-claude-desktop-essentials`. If Git asks you to sign in, use the access details your instructor gives you.
-
-> **Already downloaded the course files in an earlier lab?** Run `cd ~/Documents` and then `git pull` to get the latest files. Do not clone a second time.
-
-> **Git says the folder is not empty?** Documents already has files in it. Run these commands instead:
->
-> ```
-> cd ~/Documents
-> git init
-> git remote add origin <REPO_URL>
-> git pull origin main
-> ```
+> **Already downloaded the course files in an earlier lab?** Run `cd ~/Documents/ClaudeMasterClass` and then `git pull` to get the latest files. Do not clone a second time.
 
 ---
 
@@ -170,7 +161,7 @@ Ask yourself:
 
 ### Step 12: Choose a Document to Summarize
 
-Pick a real document you have on hand: a report, an article, meeting notes, or a policy document. If you do not have one ready, use the sample document `lakeside-q3-operations-update.txt`. You downloaded it in Part 1. It is in `~/Documents/course-1-claude-ai-essentials/lab-files`. Open it in Text Editor, select all of the text, and copy it.
+Pick a real document you have on hand: a report, an article, meeting notes, or a policy document. If you do not have one ready, use the sample document `lakeside-q3-operations-update.txt`. You downloaded it in Part 1. It is in `~/Documents/ClaudeMasterClass/course-1-claude-ai-essentials/labs/lab-files`. Open it in Text Editor, select all of the text, and copy it.
 
 Paste the text into a new message in your conversation, or upload the file as a document.
 

@@ -20,7 +20,7 @@
 
 > **You are working in a shared classroom environment.** Your VM is for today's class only. Use the class account your instructor provides, and do not sign in with a personal account on the VM.
 
-> **Using your own machine instead?** Each step below includes a short Windows and Mac note where the steps differ. On your own machine you need Claude Desktop installed and signed in, and permission to install an extension. Linux machines must run Ubuntu 22.04 or later, or Debian 12 or later. You also need Git. Download the course files into your Documents folder with the same commands as Step 7, using Git Bash on Windows or Terminal on Mac.
+> **Using your own machine instead?** Each step below includes a short Windows and Mac note where the steps differ. On your own machine you need Claude Desktop installed and signed in, and permission to install an extension. Linux machines must run Ubuntu 22.04 or later, or Debian 12 or later. You also need Git. Download the course files into a ClaudeMasterClass folder inside your Documents folder with the same commands as Step 7, using Git Bash on Windows or Terminal on Mac.
 
 > **Claude Desktop on Linux is a beta.** Dictation and computer use are not available on Linux, and Claude's own Quick Entry feature is not required for this lab. Neither affects anything you do today.
 
@@ -73,26 +73,17 @@ Open the Activities overview, type **Terminal**, and open it.
 Your instructor gives you the repository address. In the commands below, replace `<REPO_URL>` with that address, without the angle brackets. Run the commands one at a time.
 
 ```
-cd ~/Documents
+mkdir -p ~/Documents/ClaudeMasterClass
+cd ~/Documents/ClaudeMasterClass
 git clone <REPO_URL> .
+ls
 ```
 
-The first command moves you into your Documents folder. The second downloads the course files into it. The dot at the end tells Git to download the files straight into the current folder.
+The first command creates a folder named `ClaudeMasterClass` inside your Documents folder. The second moves you into it. The third downloads the course files straight into that folder. The dot at the end tells Git to use the current folder. The last command lists what you downloaded.
 
-Then run `ls` to list what you downloaded.
+**Expected result:** The `ls` command lists these folders: `course-1-claude-ai-essentials` and `course-2-claude-desktop-essentials`. Each one has a `labs` folder and a `demos` folder. If Git asks you to sign in, use the access details your instructor gives you.
 
-**Expected result:** The `ls` command lists these folders: `ROI-Lab-Files`, `demo-files`, `fin-demo-files`, `course-1-claude-ai-essentials`, and `course-2-claude-desktop-essentials`. If Git asks you to sign in, use the access details your instructor gives you.
-
-> **Already downloaded the course files in an earlier lab?** Run `cd ~/Documents` and then `git pull` to get the latest files. Do not clone a second time.
-
-> **Git says the folder is not empty?** Documents already has files in it. Run these commands instead:
->
-> ```
-> cd ~/Documents
-> git init
-> git remote add origin <REPO_URL>
-> git pull origin main
-> ```
+> **Already downloaded the course files in an earlier lab?** Run `cd ~/Documents/ClaudeMasterClass` and then `git pull` to get the latest files. Do not clone a second time.
 
 ---
 
@@ -113,7 +104,7 @@ Then run `ls` to list what you downloaded.
 Start a new chat and type this prompt exactly:
 
 ```
-Open project-tracker.csv in my Documents/ROI-Lab-Files/lab1-workspace folder and tell me how many tasks are marked Done.
+Open project-tracker.csv in my Documents/ClaudeMasterClass/course-2-claude-desktop-essentials/labs/ROI-Lab-Files/lab1-workspace folder and tell me how many tasks are marked Done.
 ```
 
 **Expected result:** Claude tells you it cannot open files on your computer. It may ask you to attach the file or paste its contents instead.
@@ -126,11 +117,11 @@ Open project-tracker.csv in my Documents/ROI-Lab-Files/lab1-workspace folder and
 
 ### Step 10: Find the Folder in Your File Manager
 
-**Linux (VM):** Open **Files**, choose **Documents**, and open **ROI-Lab-Files**.
+**Linux (VM):** Open **Files**, choose **Documents**, then open **ClaudeMasterClass**, **course-2-claude-desktop-essentials**, **labs**, and **ROI-Lab-Files**.
 
-**Windows:** Open **File Explorer**, choose **Documents**, and open **ROI-Lab-Files**.
+**Windows:** Open **File Explorer**, choose **Documents**, then open **ClaudeMasterClass**, **course-2-claude-desktop-essentials**, **labs**, and **ROI-Lab-Files**.
 
-**Mac:** Open **Finder**, choose **Documents**, and open **ROI-Lab-Files**.
+**Mac:** Open **Finder**, choose **Documents**, then open **ClaudeMasterClass**, **course-2-claude-desktop-essentials**, **labs**, and **ROI-Lab-Files**.
 
 **Expected result:** You see three folders named lab1-workspace, lab2-workspace, and lab2-restricted, plus a README.txt file.
 
@@ -140,7 +131,7 @@ Open the lab1-workspace folder.
 
 **Expected result:** You see four files: project-tracker.csv, meeting-notes-2026-09-30.md, client-update-draft.md, and style-guide.txt.
 
-> **Optional terminal check on Linux and Mac.** Open a terminal and run `ls ~/Documents/ROI-Lab-Files/lab1-workspace`. You will use the same command in Step 22 to confirm a file Claude creates.
+> **Optional terminal check on Linux and Mac.** Open a terminal and run `ls ~/Documents/ClaudeMasterClass/course-2-claude-desktop-essentials/labs/ROI-Lab-Files/lab1-workspace`. You will use the same command in Step 22 to confirm a file Claude creates.
 
 ### Step 12: Read the Scenario
 
@@ -171,18 +162,18 @@ Find the extension named **Filesystem** and open its detail page. Read the descr
 Click **Install**. Read each prompt fully before you continue. When Claude asks which directories the extension may use, add this folder and no other:
 
 ```
-Documents/ROI-Lab-Files/lab1-workspace
+Documents/ClaudeMasterClass/course-2-claude-desktop-essentials/labs/ROI-Lab-Files/lab1-workspace
 ```
 
-**Linux (VM):** The full path is `/home/<your username>/Documents/ROI-Lab-Files/lab1-workspace`. Use the folder picker to select it.
+**Linux (VM):** The full path is `/home/<your username>/Documents/ClaudeMasterClass/course-2-claude-desktop-essentials/labs/ROI-Lab-Files/lab1-workspace`. Use the folder picker to select it.
 
-**Windows:** The full path is `C:\Users\<your username>\Documents\ROI-Lab-Files\lab1-workspace`.
+**Windows:** The full path is `C:\Users\<your username>\Documents\ClaudeMasterClass\course-2-claude-desktop-essentials\labs\ROI-Lab-Files\lab1-workspace`.
 
-**Mac:** The full path is `/Users/<your username>/Documents/ROI-Lab-Files/lab1-workspace`.
+**Mac:** The full path is `/Users/<your username>/Documents/ClaudeMasterClass/course-2-claude-desktop-essentials/labs/ROI-Lab-Files/lab1-workspace`.
 
 **Expected result:** The Filesystem extension finishes installing and shows as enabled in **Settings > Extensions**. The allowed directories list shows lab1-workspace and nothing else.
 
-> **Do not add the Documents folder, your home folder, or ROI-Lab-Files.** Adding a parent folder gives Claude access to everything inside it, including the lab2-restricted folder. You will test why that matters in Lab 2.
+> **Do not add the Documents folder, your home folder, the ClaudeMasterClass folder, or ROI-Lab-Files.** Adding a parent folder gives Claude access to everything inside it, including the lab2-restricted folder. You will test why that matters in Lab 2.
 
 > **Install stalled or failed?** Ask your instructor. A staged copy of the extension is available for this situation. You can also pair with a neighbor whose install succeeded.
 
@@ -205,7 +196,7 @@ Start a new chat for this part so Claude loads the extension's tools.
 Type this prompt:
 
 ```
-List the files in my Documents/ROI-Lab-Files/lab1-workspace folder and describe each one in one sentence.
+List the files in my Documents/ClaudeMasterClass/course-2-claude-desktop-essentials/labs/ROI-Lab-Files/lab1-workspace folder and describe each one in one sentence.
 ```
 
 When Claude asks permission to use a tool, read the prompt, confirm it points at the lab1-workspace folder, and allow it.
@@ -227,7 +218,7 @@ Read meeting-notes-2026-09-30.md and give me the three decisions and the four ac
 Type the same prompt you used in Step 9:
 
 ```
-Open project-tracker.csv in my Documents/ROI-Lab-Files/lab1-workspace folder and tell me how many tasks are marked Done.
+Open project-tracker.csv in my Documents/ClaudeMasterClass/course-2-claude-desktop-essentials/labs/ROI-Lab-Files/lab1-workspace folder and tell me how many tasks are marked Done.
 ```
 
 **Expected result:** Claude answers that 4 tasks are marked Done. You received an answer from the file itself with no upload step.
@@ -270,7 +261,7 @@ Read the permission prompt before you allow it. This step asks Claude to create 
 
 Check the file yourself without asking Claude.
 
-**Linux (VM) and Mac:** Open a terminal and run `ls -l ~/Documents/ROI-Lab-Files/lab1-workspace`. Then run `cat ~/Documents/ROI-Lab-Files/lab1-workspace/client-update-corrected.md`.
+**Linux (VM) and Mac:** Open a terminal and run `ls -l ~/Documents/ClaudeMasterClass/course-2-claude-desktop-essentials/labs/ROI-Lab-Files/lab1-workspace`. Then run `cat ~/Documents/ClaudeMasterClass/course-2-claude-desktop-essentials/labs/ROI-Lab-Files/lab1-workspace/client-update-corrected.md`.
 
 **Windows:** Open the lab1-workspace folder in File Explorer and open client-update-corrected.md.
 

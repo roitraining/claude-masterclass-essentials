@@ -16,7 +16,7 @@ The files live next to this guide:
 - `demo-files` holds `expense-sample.csv`, `budget-notes.txt`, and `messy-contact-list.csv`. All three are fictional.
 - `fin-demo-files` holds the financial services files used in Demos 7 to 9.
 
-Both folders are in your Documents folder after you download the course files in Lab 1, Part 1.
+Both folders are in `~/Documents/ClaudeMasterClass/course-2-claude-desktop-essentials/demos` after you download the course files in Lab 1, Part 1.
 
 > **Linux first, then Windows, then Mac.** Each demo gives the Linux steps first. Where Windows or Mac differ, a short note follows. Claude Desktop on Linux is a beta. Voice dictation and computer use are not available on Linux.
 
@@ -34,7 +34,7 @@ Both folders are in your Documents folder after you download the course files in
 - [ ] A keyboard shortcut named Open Claude, bound to `Ctrl+Alt+C` and running `claude-desktop`, created and tested (the same steps as Lab 1, Step 23)
 - [ ] A second application open and visible for Demo 1 (Text Editor, or a spreadsheet application if the VM has one)
 - [ ] `messy-contact-list.csv` from the `demo-files` folder, ready to open as the screenshot target for Demo 2
-- [ ] The `demo-files` folder from the course repo, holding `expense-sample.csv`, `budget-notes.txt`, and `messy-contact-list.csv`
+- [ ] The `demo-files` folder from the course files in `~/Documents/ClaudeMasterClass/course-2-claude-desktop-essentials/demos`, holding `expense-sample.csv`, `budget-notes.txt`, and `messy-contact-list.csv`
 - [ ] The Filesystem Desktop Extension available to install in Demo 5
 - [ ] A web browser on the VM for the cross-device sync check in Demo 3
 
@@ -138,14 +138,14 @@ Voice dictation is not available on Linux, so this demo uses drag and drop inste
 
 ### Steps
 
-1. Open **Files** and go to the `demo-files` folder in Documents. Find `expense-sample.csv`. Place the Files window and the Claude window side by side.
+1. Open **Files** and go to the `demo-files` folder in `Documents/ClaudeMasterClass/course-2-claude-desktop-essentials/demos`. Find `expense-sample.csv`. Place the Files window and the Claude window side by side.
 2. In Claude, start a new conversation.
 3. Drag `expense-sample.csv` from Files into the Claude message box. Check that the file is attached to the message.
 4. Type: "Which three expenses are the largest, and what do they add up to?" and send it.
 5. Read Claude's answer. Open the file and check the three amounts and the total yourself.
 6. Take note that the file went into this one conversation only. To use it again tomorrow, you would drag it in again.
 
-**Files:** `expense-sample.csv`, in the `demo-files` folder (Documents on the VM).
+**Files:** `expense-sample.csv`, in the `demo-files` folder of the course files on the VM.
 
 **Expected result:** Claude names the three largest expenses, $1,240.00 to Northline Travel, $865.40 to Northline Travel, and $399.00 to Brightwave Software, and gives a total of $2,504.40.
 
@@ -170,18 +170,18 @@ This demo sets up both labs. Read every permission prompt as it appears. Grant o
 1. Open Settings > Extensions inside Claude Desktop and choose Browse extensions.
 2. Find the Filesystem extension in the directory and open its detail page.
 3. Click install. As each permission prompt appears, stop and read it before clicking through. Work out exactly what the prompt asks to access and why the extension needs that access.
-4. When Claude asks which directory the extension may use, select only the `demo-files` folder: `/home/<your username>/Documents/demo-files` on the VM. Do not select Documents or your home folder.
+4. When Claude asks which directory the extension may use, select only the `demo-files` folder: `/home/<your username>/Documents/ClaudeMasterClass/course-2-claude-desktop-essentials/demos/demo-files` on the VM. Do not select Documents, ClaudeMasterClass, or your home folder.
 5. Complete the install and confirm the extension shows as active in Settings > Extensions.
 6. Open a new Claude Desktop conversation.
 7. Ask a question that needs the extension to read a local file, without attaching anything: "What does budget-notes.txt in my demo-files folder say about Q3 spending?"
 8. Look at the response. Take note that no file was dragged, pasted, or uploaded. Claude reached the content directly through the extension.
 9. Compare this with Demo 4. In Demo 4 you dragged a file into the conversation. Here you dragged nothing. The answer is the same kind, and the path to it is different.
 
-**Files:** `budget-notes.txt`, in the `demo-files` folder (Documents on the VM).
+**Files:** `budget-notes.txt`, in the `demo-files` folder of the course files on the VM.
 
 **Expected result:** The extension installs and shows as active with no errors. Claude's answer states that total Q3 spend was $88,000, with marketing at $42,500, travel at $18,200, and software licenses at $27,300, and it may mention the travel overage. This confirms it read the live file rather than guessing.
 
-> **Windows:** The folder path is `C:\Users\<your username>\Documents\demo-files`. **Mac:** The folder path is `/Users/<your username>/Documents/demo-files`. Calendar extensions in the directory vary by platform, so use the Filesystem extension for this demo on every platform.
+> **Windows:** The folder path is `C:\Users\<your username>\Documents\ClaudeMasterClass\course-2-claude-desktop-essentials\demos\demo-files`. **Mac:** The folder path is `/Users/<your username>/Documents/ClaudeMasterClass/course-2-claude-desktop-essentials/demos/demo-files`. Calendar extensions in the directory vary by platform, so use the Filesystem extension for this demo on every platform.
 
 > **Why read every permission prompt:** Clicking through prompts quickly builds a habit that is risky later. Reading what each prompt grants, every time, is the main lesson of this demo. The access a local extension can request is broader than a single file upload.
 
@@ -224,7 +224,7 @@ These three demos repeat skills the course already teaches, using fictional fina
 
 Every person, company, account, and figure in the files is fictional. The policy and thresholds are invented teaching examples, not legal or compliance advice. Have a compliance team review the wording before using these demos with a client's staff.
 
-The files are in the `fin-demo-files` folder next to this guide. Copy that folder into Documents on the VM. Then add it to the Filesystem extension's allowed directories, the same list you read in Lab 2, Step 1. Add this folder and no other. If Demo 5 left `demo-files` in the list, you can leave it there.
+The files are in the `fin-demo-files` folder next to this guide, in the course files on the VM. Add it to the Filesystem extension's allowed directories, the same list you read in Lab 2, Step 1. Add this folder and no other. If Demo 5 left `demo-files` in the list, you can leave it there.
 
 > ## BUILD NOTE: Run Demos 7 to 9 on the class VM
 >
@@ -248,7 +248,7 @@ The files are in the `fin-demo-files` folder next to this guide. Copy that folde
 4. Read Claude's list. Check it against the six expected differences below.
 5. Type: "Write these exceptions to a file named exceptions.md in the same folder. Give each one a line and a suggested next step."
 6. Read this permission prompt before you allow it. Take note that this one asks to create a file.
-7. Confirm the file yourself. On the Linux VM, open a terminal and run `cat ~/Documents/fin-demo-files/exceptions.md`.
+7. Confirm the file yourself. On the Linux VM, open a terminal and run `cat ~/Documents/ClaudeMasterClass/course-2-claude-desktop-essentials/demos/fin-demo-files/exceptions.md`.
 8. Optional: ask, "After accounting for these items, what should the true cash balance be?" Work the arithmetic yourself before you read Claude's answer.
 
 **Expected result:** Claude finds all six differences.

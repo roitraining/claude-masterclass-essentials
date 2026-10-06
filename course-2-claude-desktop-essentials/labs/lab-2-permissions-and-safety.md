@@ -9,7 +9,7 @@
 
 - [ ] Lab 1 completed, with the Filesystem extension enabled and lab1-workspace in its allowed directories
 - [ ] A Linux VM provided by your instructor, with Claude Desktop already installed (primary path for this class), or your own machine set up as described in Lab 1
-- [ ] The ROI-Lab-Files folder in your Documents folder, including lab2-workspace and lab2-restricted
+- [ ] The ROI-Lab-Files folder from the course files you downloaded in Lab 1, in `Documents/ClaudeMasterClass/course-2-claude-desktop-essentials/labs`, including lab2-workspace and lab2-restricted
 - [ ] Module 7 of today's session completed (Local Extension Access vs. Web Upload, and Review Before You Install)
 
 > **All data in this lab is fictional.** The lab2-restricted folder contains a made-up access code. Treat it as if it were sensitive, because the lab is about how Claude behaves when sensitive files sit near files you share.
@@ -31,7 +31,7 @@ Open **Settings > Extensions**, open the Filesystem extension, and read the allo
 Start a new chat and type this prompt:
 
 ```
-Read vendor-email.txt in my Documents/ROI-Lab-Files/lab2-workspace folder and summarize it.
+Read vendor-email.txt in my Documents/ClaudeMasterClass/course-2-claude-desktop-essentials/labs/ROI-Lab-Files/lab2-workspace folder and summarize it.
 ```
 
 **Expected result:** Claude cannot read the file. It reports that the folder is outside the directories it may access, or it reports a permission error from the extension. It does not return a summary of the email.
@@ -53,14 +53,14 @@ Record in one sentence how Claude described the failure, using Claude's own word
 Open **Settings > Extensions**, open the Filesystem extension, and add this folder to the allowed directories:
 
 ```
-Documents/ROI-Lab-Files/lab2-workspace
+Documents/ClaudeMasterClass/course-2-claude-desktop-essentials/labs/ROI-Lab-Files/lab2-workspace
 ```
 
-**Linux (VM):** Select `/home/<your username>/Documents/ROI-Lab-Files/lab2-workspace` with the folder picker.
+**Linux (VM):** Select `/home/<your username>/Documents/ClaudeMasterClass/course-2-claude-desktop-essentials/labs/ROI-Lab-Files/lab2-workspace` with the folder picker.
 
-**Windows:** Select `C:\Users\<your username>\Documents\ROI-Lab-Files\lab2-workspace`.
+**Windows:** Select `C:\Users\<your username>\Documents\ClaudeMasterClass\course-2-claude-desktop-essentials\labs\ROI-Lab-Files\lab2-workspace`.
 
-**Mac:** Select `/Users/<your username>/Documents/ROI-Lab-Files/lab2-workspace`.
+**Mac:** Select `/Users/<your username>/Documents/ClaudeMasterClass/course-2-claude-desktop-essentials/labs/ROI-Lab-Files/lab2-workspace`.
 
 Do not add lab2-restricted or ROI-Lab-Files.
 
@@ -79,7 +79,7 @@ Open vendor-email.txt in a text editor or with the file manager and read it all 
 Start a new chat and type this prompt:
 
 ```
-Read vendor-email.txt in my Documents/ROI-Lab-Files/lab2-workspace folder and summarize it for me in three sentences.
+Read vendor-email.txt in my Documents/ClaudeMasterClass/course-2-claude-desktop-essentials/labs/ROI-Lab-Files/lab2-workspace folder and summarize it for me in three sentences.
 ```
 
 Read every permission prompt before you respond. If any prompt names the lab2-restricted folder or the file board-notes-CONFIDENTIAL.txt, deny it.
@@ -105,7 +105,7 @@ Answer this question in writing: which two things stood between the vendor email
 Add the ROI-Lab-Files folder itself to the allowed directories:
 
 ```
-Documents/ROI-Lab-Files
+Documents/ClaudeMasterClass/course-2-claude-desktop-essentials/labs/ROI-Lab-Files
 ```
 
 **Expected result:** The allowed directories list now includes ROI-Lab-Files. Because this folder contains lab2-restricted, Claude can now reach the confidential file.
@@ -129,7 +129,7 @@ Open the Filesystem extension settings and remove ROI-Lab-Files from the allowed
 Start a new chat and type this prompt:
 
 ```
-Read board-notes-CONFIDENTIAL.txt in my Documents/ROI-Lab-Files/lab2-restricted folder.
+Read board-notes-CONFIDENTIAL.txt in my Documents/ClaudeMasterClass/course-2-claude-desktop-essentials/labs/ROI-Lab-Files/lab2-restricted folder.
 ```
 
 **Expected result:** Claude cannot read the file and reports that the folder is outside the directories it may access.
@@ -166,7 +166,7 @@ When the permission prompt for creating the file appears, read it. Confirm the f
 
 ### Step 15: Verify the File Yourself
 
-**Linux (VM) and Mac:** Open a terminal and run `cat ~/Documents/ROI-Lab-Files/lab2-workspace/vendor-email-review.md`. Then run `ls ~/Documents/ROI-Lab-Files/lab2-restricted` and confirm the folder still holds only board-notes-CONFIDENTIAL.txt.
+**Linux (VM) and Mac:** Open a terminal and run `cat ~/Documents/ClaudeMasterClass/course-2-claude-desktop-essentials/labs/ROI-Lab-Files/lab2-workspace/vendor-email-review.md`. Then run `ls ~/Documents/ClaudeMasterClass/course-2-claude-desktop-essentials/labs/ROI-Lab-Files/lab2-restricted` and confirm the folder still holds only board-notes-CONFIDENTIAL.txt.
 
 **Windows:** Open the lab2-workspace folder in File Explorer and open vendor-email-review.md. Open the lab2-restricted folder and confirm it still holds only board-notes-CONFIDENTIAL.txt.
 
