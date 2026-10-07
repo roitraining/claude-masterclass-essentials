@@ -22,12 +22,6 @@ Both folders are in `~/Documents/ClaudeMasterClass/course-2-claude-desktop-essen
 
 ---
 
-> ## BUILD NOTE: Run these demos on the class VM
->
-> The `Ctrl+Alt+C` shortcut was confirmed on the class VM on October 6, 2026. The rest of this file has not been run on the VM. Confirm on the VM: that the Xfce screenshot tool behaves as described in Demo 2, that dragging a file from File Manager into the Claude message box attaches it (Demo 4), and that the Filesystem extension installs with the folder picker (Demo 5). Two statements in Demo 6 are also unconfirmed against a public source: the exact layout of an extension's detail page, and the statement about local credentials in Step 4. A citation for that statement is still needed. Delete this note after the VM run passes.
-
----
-
 ## Prerequisites
 
 - [ ] Claude Desktop installed and signed in on a Linux VM (the class VM, which uses the Xfce desktop)
@@ -225,12 +219,6 @@ These three demos repeat skills the course already teaches, using fictional fina
 Every person, company, account, and figure in the files is fictional. The policy and thresholds are invented teaching examples, not legal or compliance advice. Have a compliance team review the wording before using these demos with a client's staff.
 
 The files are in the `fin-demo-files` folder next to this guide, in the course files on the VM. Add it to the Filesystem extension's allowed directories, the same list you read in Lab 2, Step 1. Add this folder and no other. If Demo 5 left `demo-files` in the list, you can leave it there.
-
-> ## BUILD NOTE: Run Demos 7 to 9 on the class VM
->
-> These demos were written from the known contents of the files. They have not been run on the VM or in the Claude Desktop app. Run each one and confirm three things: that you can add a second folder to the Filesystem extension's allowed directories, that the write permission prompt in Demo 7 appears and works, and that the screenshot flow from Demo 2 attaches the dashboard image in Demo 9. If the screenshot flow fails, attach `portfolio-dashboard.png` directly. Delete this note after the VM run passes.
-
----
 
 ## Demo 7: Reconcile Two Ledgers
 

@@ -5,12 +5,6 @@
 
 ---
 
-> ## BUILD NOTE: The Windows steps in Part 6 need a test
->
-> The Linux steps in Part 6 were confirmed on the class VM on October 6, 2026: the Xfce Application Shortcuts tab, the `claude-desktop` command, and the `Ctrl+Alt+C` shortcut that brings Claude forward. The Windows steps in Part 6 are untested. The app names elsewhere in this lab (the Applications menu, Terminal Emulator, File Manager, Mousepad) come from screenshots of the class VM's Xfce desktop. Delete this note after the Windows steps are tested.
-
----
-
 ## Prerequisites
 
 - [ ] A Linux VM provided by your instructor, with Claude Desktop already installed (primary path for this class)
