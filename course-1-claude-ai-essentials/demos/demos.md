@@ -19,6 +19,8 @@ Each demo is laid out the same way:
 
 Many steps include a prompt to type into Claude. Type each one exactly as shown, inside the quotation marks.
 
+When a demo attaches a Word or Excel file, Claude may ask permission to run a command to read it ("Claude wants to run a command"). Click **Allow once** and continue. This applies to Demos 5, 6, 8, and 13.
+
 The demo files are in the `demo-files` folder next to this guide. After you download the course files in Lab 1, both are in `~/Documents/ClaudeMasterClass/course-1-claude-ai-essentials/demos`. Every person, company, account, and figure in them is fictional.
 
 Some demos continue from an earlier one. Where that is true, the demo says so. Claude can produce different wording each time, so your results may differ in detail from the descriptions here. Check them against the Expected result.
@@ -75,8 +77,8 @@ Some demos continue from an earlier one. Where that is true, the demo says so. C
 
 **Steps:**
 
-1. Open a new conversation. Type a vague request: "Write a short email to a client who is worried about the market dropping this month." Run it and read the draft.
-2. Discuss with your group or a partner: which sentences would a compliance reviewer want to stop or rewrite? Write down two or three.
+1. Open a new conversation. Type a vague request: "Write a short email to a client who is worried about the market dropping this month." Run it. In testing on October 19, 2026, Claude answered a vague request like this with clarifying questions instead of a draft. If that happens, point it out to the class, then answer in one short line (for example, "A long-time client of a wealth management firm, just a short reassuring note") and run it to get a draft.
+2. Discuss with your group or a partner: which sentences in the draft would a compliance reviewer want to stop or rewrite? Write down two or three.
 3. Open `communication-rules-card.txt` and read the seven rules. These are the firm's rules. Claude has never seen them.
 4. Start a new message and paste the POCC version below. Replace the bracketed line with the full text of the rules card.
 
@@ -209,7 +211,7 @@ Constraints: Under 150 words. Plain language. Warm tone. Include the required di
 3. Read the three summaries. Take note that Claude handled the different headers, the title rows, and the text currency values without being told to.
 4. Ask a follow-up question that compares across the files: "Which region had the strongest quarter, and why?"
 
-**Expected result:** Three clear, accurate summaries. North: $142,700 and 355 units. South: $127,950 and 339 units. West: $167,600 and 435 units. The combined total is $438,250 and 1,129 units. In the follow-up answer, West is the strongest quarter. North has the highest revenue per unit, about $402, compared with about $385 for West and about $377 for South. Gray and Ivy, both in West, are the top two of the nine reps, and Faye in South is the lowest.
+**Expected result:** Three clear, accurate summaries. North: $142,700 and 355 units. South: $127,950 and 339 units. West: $167,600 and 435 units. The combined total is $438,250 and 1,129 units. In the follow-up answer, Claude names a strongest region and defends it with figures that match the files. West leads on total revenue and volume, and North leads on growth and price per unit, so Claude may reasonably pick either; in testing on October 19, 2026, it chose North on momentum while noting West sold the most. North has the highest revenue per unit, about $402, compared with about $385 for West and about $377 for South. Gray and Ivy, both in West, are the top two of the nine reps, and Faye in South is the lowest.
 
 ---
 
@@ -222,9 +224,10 @@ Constraints: Under 150 words. Plain language. Warm tone. Include the required di
 **Steps:**
 
 1. Stay in the Demo 8 conversation. Ask: "Combine the three regional summaries into one short report that leads with the overall conclusion. Save it as an artifact."
-2. Take note of the Artifact card that appears. Look at its "Only you" label and its Share button.
+2. Claude may ask one or two quick questions first, such as who the report is for and what it should include. Answer or skip them; the recommended options work fine.
+3. Take note of the card that appears. Depending on the account, the report is saved as an Artifact or a Claude Docs doc. Either way, look at its "Only you" label and its Share button.
 
-**Expected result:** A short, readable report that states an overall conclusion up front, backed by the three regional summaries, saved as an Artifact that you can download or share with someone else.
+**Expected result:** A short, readable report that states an overall conclusion up front, backed by the three regional summaries, saved as an Artifact or Claude Docs doc that you can download or share with someone else.
 
 > **Background:** HubSpot reports a 40 percent productivity increase across web development and content-creation workflows from using Claude Projects and Artifacts to centralize context and accelerate content creation. Its CMO, Kipp Bodnar, said, "One of the things we love about Claude is that it has really good taste, and marketing's all about taste." The gather, summarize, combine chain in this demo is the same shape of work HubSpot's marketing team runs at company scale.
 
@@ -234,13 +237,13 @@ Constraints: Under 150 words. Plain language. Warm tone. Include the required di
 
 **Supports:** Module 7, turning consolidated figures into a first-look visual.
 
-**Context:** Inline charts are labeled beta. Confirm the label and the results in your own account. This models the verify-before-you-rely-on-it habit Module 8 teaches.
+**Context:** Inline charts have carried a beta label in some versions of the interface. Confirm what your account shows and check the results. This models the verify-before-you-rely-on-it habit Module 8 teaches.
 
 **Steps:**
 
 1. Open a new conversation. Type: "Create a bar chart of these Q3 sales totals: North $142,700, South $127,950, West $167,600."
 2. Let the chart render. Claude may produce it inline in the conversation or as an Artifact. Take note of which one you get.
-3. Take note of any beta label on the chart.
+3. Take note of any beta label on the chart. In testing on October 19, 2026, no beta label appeared.
 4. Check the chart against the source numbers. The bar heights and labels should match $142,700 for North, $127,950 for South, and $167,600 for West.
 
 **Expected result:** A basic, readable chart that matches the figures. West is the tallest bar and South is the shortest. If anything looks off, ask Claude to correct it. That correction is part of the demo.
@@ -260,7 +263,7 @@ Constraints: Under 150 words. Plain language. Warm tone. Include the required di
 3. Read the answer and look at its citations. Take note that the citations may point to a landing page or a non-official site.
 4. Open at least one citation. Check the figure against the official source, bls.gov.
 
-**Expected result:** Claude returns an answer with visible source citations, and at least one citation you check supports the specific claim it is attached to. In testing on October 5 to 6, 2026, Claude reported the August 2026 release, published September 11, 2026, with 3.4 percent for all items and 2.4 percent excluding food and energy. This figure changes monthly. Verify it on bls.gov. The next release is scheduled for October 14, 2026.
+**Expected result:** Claude returns an answer with visible source citations, and at least one citation you check supports the specific claim it is attached to. In testing on October 19, 2026, Claude reported the September 2026 release, published October 14, 2026, with 3.7 percent for all items, and cited bls.gov directly. This figure changes monthly. Verify it on bls.gov.
 
 > **Why this matters:** Citations are a starting point for verification, not proof of accuracy. The next demo shows why that distinction matters.
 
@@ -274,15 +277,15 @@ Constraints: Under 150 words. Plain language. Warm tone. Include the required di
 
 **Steps:**
 
-1. Open the tools menu next to the message box and turn Web search off. Web Search is on by default, so this step is required.
-2. Look up the current federal funds target range on the Federal Reserve Open Market Operations page. Write it down. On October 5, 2026, the page showed 3.75 to 4.00 percent, effective September 17, 2026, after a quarter-point increase, per the Federal Reserve's September 16, 2026 statement. Check again, since this figure changes. If you are outside the United States, use your country's central bank policy rate instead.
-3. Open a new conversation and confirm that Web search is still off.
-4. Ask: "What is the current federal funds target range set by the Federal Open Market Committee? Answer in one sentence."
+1. The current Claude.ai interface has no Web search on-off toggle in the composer menus or in Settings, so this demo controls search through the prompt instead. Point this out to the class: the model-knowledge-versus-live-search distinction is the same either way.
+2. Look up the current federal funds target range on the Federal Reserve Open Market Operations page. Write it down. On October 19, 2026, the page showed 3.75 to 4.00 percent, effective September 17, 2026, after a quarter-point increase, per the Federal Reserve's September 16, 2026 statement. Check again, since this figure changes. If you are outside the United States, use your country's central bank policy rate instead.
+3. Open a new conversation.
+4. Ask: "Without searching the web, answer from your training knowledge only: What is the current federal funds target range set by the Federal Open Market Committee? Answer in one sentence."
 5. Compare Claude's figure with the one you wrote down.
-6. Turn Web search on from the tools menu. In testing, the in-chat "Turn on web search" button did not switch it on, so use the tools menu. In the same conversation, ask: "Search the web and answer again in one sentence, with a source."
-7. Open the cited source. Confirm that it is the Federal Reserve or a news report that quotes it, and that the figure matches the one you wrote down.
+6. In the same conversation, ask: "Search the web and answer again in one sentence, with a source."
+7. Open the cited source. Confirm that it is the Federal Reserve or a news report that quotes it, and that the figure matches the one you wrote down. In testing, the citation pointed to a third-party site rather than the Fed, which is exactly why this step opens and checks the source.
 
-**Expected result:** With Web Search off, Claude may state a range with confidence that does not match your figure, or it may say that it cannot know the current rate. In testing, Claude gave 3.50 to 3.75 percent (December 2025) with a hedge. With Web Search on, Claude gives the figure you wrote down and links a source you can open.
+**Expected result:** When told not to search, Claude may state a range with confidence that does not match your figure, or it may say that it cannot know the current rate. In testing on October 19, 2026, Claude gave 3.50 to 3.75 percent (December 2025) with a hedge. When asked to search, Claude gives the figure you wrote down and links a source you can open.
 
 > **If the first answer happens to match your figure,** switch to a figure that changes weekly, such as the average 30-year fixed mortgage rate that Freddie Mac publishes. Look up the live figure first and use the same steps.
 
@@ -352,12 +355,12 @@ These five demos have a content slide in the deck but no Demo slide, so they are
 **Steps:**
 
 1. Open a new conversation. Type a single, vague sentence and nothing else: "Write a client email about a delayed shipment."
-2. Run it and read the output. Claude may show the result as email cards with options such as A and B, a Copy button, and an Open in Mail button, instead of plain text. Both forms are fine. In testing, the vague request produced two generic versions.
+2. Run it and read the output. In testing on October 19, 2026, the vague request produced clarifying questions instead of a draft: Claude asked what was shipped, what caused the delay, the new date, and the tone before writing anything. That is the point to make: an under-specified request costs you a round trip. If you want a draft to compare side by side, answer with one short line and run it again.
 3. Open a new conversation. Run a structured version of the same request. For example: "You are a customer service lead at Lakeside Outfitters. Write an email to a customer about a delayed shipment. Order number 48213. The new delivery date is October 20. The delay was caused by a warehouse shortage of the item. We are covering the shipping cost as an apology. Keep it under 100 words, in a warm and direct tone."
-4. Read the second output right after the first, so the contrast is fresh. In testing, the structured request produced one draft of about 100 words.
+4. Read the second output right after the first, so the contrast is fresh. In testing, the structured request immediately produced one draft of about 65 words, shown as an email card with a Copy button and a Send via Gmail button.
 5. Discuss with your group or a partner: what are the concrete differences between the two outputs? Consider tone, specificity, and whether each output could be sent without editing.
 
-**Expected result:** The vague-prompt output is generic and needs real editing before anyone could send it. The structured-prompt output includes the order number, the new date, the cause, and the cost handling, uses a clear tone, and has a length you did not have to trim.
+**Expected result:** The vague prompt produces clarifying questions or a generic draft, and either way nothing you could send without more work. The structured-prompt output includes the order number, the new date, the cause, and the cost handling, uses a clear tone, and has a length you did not have to trim.
 
 > **Why this matters:** This is the point where "write better prompts" stops being vague advice. It becomes a repeatable lever you control.
 
@@ -372,7 +375,7 @@ These five demos have a content slide in the deck but no Demo slide, so they are
 **Steps:**
 
 1. Open a new conversation. Type a vague office request: "Help with the quarterly report."
-2. Run it as written. Claude often returns clarifying questions. It may also return a generic outline. Either result is hard to use without more direction.
+2. Run it as written. Claude often returns clarifying questions, sometimes as an interactive question card with options. It may also return a generic outline. Either result is hard to use without more direction. On an account with connectors such as Google Drive, Claude may also search your files and past chats for the report; class accounts without connectors will not do this.
 3. Add a Persona line and run the prompt again: "You are a financial analyst writing for a non-technical executive reader." Take note of the shift in tone and vocabulary.
 4. Add an Objective line and run it again: "Summarize this quarter's regional sales performance in three short paragraphs." Take note of the shift in focus. With a Persona and an Objective but no data, Claude may return a draft with blanks and decline to invent figures. That is correct behavior.
 5. Add Context, which is the data Claude needs. Use the Q3 2026 regional totals: North $142,700 (355 units), South $127,950 (339 units), West $167,600 (435 units). Run it again. Take note of the shift in relevance and accuracy. Context is what produces specific content.
