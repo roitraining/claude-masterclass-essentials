@@ -176,11 +176,11 @@ Constraints: Under 150 words. Plain language. Warm tone. Include the required di
 
 ## Demo 7: Redact Before You Paste
 
-**Supports:** Module 6, data-handling guardrails, a major learning objective for this course. Do it after Demo 17.
+**Supports:** Module 6, data-handling guardrails, a major learning objective for this course. If you are running the optional demos, do Demo 17 first; otherwise the Module 6 slides cover the same ground.
 
 **Files:** `demo-files/customer-export.csv` and `demo-files/customer-export-redacted.csv`. Open the first file to look at it only. Never upload it.
 
-**Context:** Demo 17 covered what not to paste into an AI tool. This demo makes the rule practical with a customer export. The question to ask is not "may I use AI on this file?" but "which columns does the question need?"
+**Context:** Demo 17 (optional) covers what not to paste into an AI tool. This demo makes the rule practical with a customer export. The question to ask is not "may I use AI on this file?" but "which columns does the question need?"
 
 **Steps:**
 
