@@ -145,7 +145,7 @@ Constraints: Under 150 words. Plain language. Warm tone. Include the required di
 
 **Expected result:** For step 2, Claude says the contract renews automatically on January 1, 2028. Written notice of non-renewal is due at least 90 days before the end of the term, which is by October 2, 2027. If you miss it, a 12-month renewal term starts and the $180,000 annual minimum purchase commitment applies. For step 4, Claude says the fee is 35 percent of the Minimum Commitment remaining for the term, calculated on a monthly basis. Claude points to the relevant section each time. This is faster than reading two pages of contract language for two specific facts.
 
-> **Why this matters:** The document you choose to upload is a judgment call. Keep this contract in mind. It reappears in Demo 17 and Demo 13.
+> **Why this matters:** The document you choose to upload is a judgment call. Keep this contract in mind. It reappears in Demo 13 and in the optional Demo 17.
 
 ---
 
