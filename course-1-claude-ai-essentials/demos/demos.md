@@ -58,7 +58,7 @@ Some demos continue from an earlier one. Where that is true, the demo says so. C
 3. Leave **What are you trying to achieve?** blank or give a one-line description. That field is a description only; Claude does not follow it as instructions.
 4. The **Context** section on this dialog can also take files now, but this demo adds them after creation so you see the project screen first.
 5. Click **Create project**.
-6. On the project page, find the **Instructions** panel and click **Add**. Paste this and click **Save instructions**: "You answer questions for Lakeside Outfitters colleagues using only the project files. Name the file each answer comes from. If the files do not say, tell me the files do not say."
+6. On the project page, find the **Instructions** panel and click **Add**. Paste the following: "You answer questions for Lakeside Outfitters colleagues using only the project files. Name the file each answer comes from. If the files do not say, tell me the files do not say." Click **Save instructions**.
 7. In the **Context** panel, click **Add files** and add the three demo files to the project knowledge.
 8. Start a chat in the project. Ask these one at a time and check each answer against its file:
    - "A customer wants to return a tent bought 45 days ago. It is unused. Can we accept it?"
