@@ -1,1 +1,4 @@
 test-results/
+
+# CCK Stage 2.5 validation output (derived, regenerate via validate_content.py)
+validation/
